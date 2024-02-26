@@ -42,14 +42,14 @@ const Register = () => {
     }
 
     useEffect(() => {
-        if (user || isSuccess) {
+        if (user && isSuccess) {
             navigate("/")
         }
 
     }, [user])
     if (isLoading) {
         return (
-            <Typography variant='h1' sx={{ textAlign: "center" }}>Loading...</Typography>
+            <Typography variant='h1' sx={{ textAlign: "center" ,marginTop:"100px"}}>Loading...</Typography>
         )
     }
 

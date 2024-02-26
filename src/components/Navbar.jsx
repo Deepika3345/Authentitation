@@ -12,6 +12,7 @@ const Navbar = () => {
 
     const handlelogout = () => {
         dispatch(logoOutUser())
+        
     }
 
 
